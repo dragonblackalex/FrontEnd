@@ -1,0 +1,241 @@
+@import '_variables2.scss';
+
+@mixin ButtonSize {
+    border: 1px;
+    padding: 10px 32px;
+    font-weight: 600;
+    background-color: $ButtonColor;
+    color: #fefcf9;
+}
+
+@mixin BorderRadius {
+    border-radius: 5px;
+
+}
+
+.header_button {
+    @include ButtonSize;
+
+}
+
+.section_banner_button {
+    @include ButtonSize;
+}
+
+//simple map//
+$colors: (black: #000,
+    white: white);
+
+.header-wrap,
+.section_text,
+.section_banner_heading {
+    color: $TextColor
+}
+
+;
+
+a {
+    color: map-get($colors, white);
+}
+
+
+header {
+    background-image: $HeaderImage;
+    background-size: cover;
+    padding-bottom: 200px;
+    border-bottom-right-radius: 500px;
+
+
+}
+
+.section {
+    text-align: center;
+
+}
+
+.section_card {
+    display: flex;
+    max-width: 800px;
+    margin: 15px 400px 0px 400px;
+}
+
+body {
+    margin: 0px;
+    background-color: $BodyBackground;
+}
+
+.section_card {
+    padding: 10px;
+    background-color: $PlateBackground;
+
+    & {
+        @include BorderRadius;
+    }
+
+}
+
+.section_card_right_container {
+    @extend .section_link;
+    padding: 0px 30px 0px 30px;
+    word-spacing: 10px;
+
+
+}
+
+.section_link {
+    color: #bcd5cf;
+
+}
+
+
+
+.section_card_heading {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:  map-get($colors, white);
+}
+
+.section_card_text {
+    font-family: $FontType;
+    font-weight: 100;
+    text-align: left;
+    font-size: smaller;
+}
+
+.section_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 20px;
+
+    mark {
+        background-color: $MarkColor;
+        color:$TextColor;
+    }
+}
+
+.landing-logo {
+    display: flex;
+    align-items: center;
+
+    p {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-family: $FontType;
+        font-size: 30px;
+
+        span {
+            font-weight: lighter;
+            font-size: small;
+            text-align: center;
+        }
+
+    }
+}
+
+.header_heading {
+    max-width: 600px;
+    font-size: 70px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 850;
+
+    span {
+        background-color: $MarkColor;
+    }
+}
+
+.header-wrap {
+    margin-left: 100px;
+}
+
+.header_text {
+
+    margin-right: 700px;
+    text-align: start;
+    line-height: 1.5;
+    font-family: $FontType;
+}
+
+.section_banner {
+    background: $Gradient;
+    @include BorderRadius;
+
+}
+
+.section_banner {
+    position: relative;
+    top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .section_banner_heading {
+        font-size: 30px;
+        font-family: 'Hind', sans-serif;
+        font-weight: 700;
+        position: relative;
+
+    }
+
+    .section_banner_text {
+        text-align: left;
+        font-family: $FontType;
+        color: map-get($colors, white);
+
+    }
+
+    .section_banner_text_wrap::before {
+        width: 72px;
+        height: 41px;
+        background-color: $MarkColor;
+        position: absolute;
+        content: '';
+        left: 352px;
+        top: 30px;
+
+    }
+
+}
+
+
+
+.footer-wrap {
+    background-color: $FooterColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    color: white;
+
+    p {
+        display: inline-flex;
+        align-items: center;
+        text-align: left;
+
+        max-width: 300px;
+    }
+
+    span {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.footer_text {
+    font-family: $FontType;
+}
+
+.footer-cr {
+    @extend .footer_text;
+}
+
+.landing-logo {
+    font-family: $FontType;
+}
+
+ a.login {margin-left: 150px;}
