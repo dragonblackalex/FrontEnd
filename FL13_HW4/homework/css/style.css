@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Fascinate&family=Fascinate+Inline&family=Fredoka+One&family=Kdam+Thmor+Pro&family=Monoton&family=Press+Start+2P&display=swap');
+
+.title h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: blueviolet;
+  filter: blur(1px);
+  text-shadow: 0px 7px 3px #76cdd7;
+}
+
+a:-webkit-any-link {
+  color: orangered;
+  text-decoration: none;
+}
+
+a:-webkit-any-link:hover {
+  color: blueviolet;
+  filter: blur(1px);
+}
+
+.texthello {
+  font-size: 3vw;
+  color: aqua;
+  font-family: 'Monoton', cursive;
+  word-spacing: 2vw;
+  margin: 0;
+}
+
+.textMy {
+  color: yellowgreen;
+  font-family: 'Fascinate', cursive;
+}
+
+h2 {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+}
+
+div.boxav1 {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+p.lorem {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+html {
+  height: 100%;
+  min-width: 900px;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.suntext {
+  background: url(https://images3.alphacoders.com/935/935578.jpg) 50% 0 no-repeat;
+  block-size: 100%;
+  background-attachment: local;
+  background-position: center;
+
+}
+
+.suntext2 {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8%;
+
+}
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+
+}
+
+.tm-main-nav a {
+  margin: 0 10px;
+}
+
+
+
+.firstimage img {
+  max-width: 60%;
+  max-height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.contentbox {
+  width: 100%;
+}
+
+.boxav1 img {
+  max-width: 5%;
+  max-height: 5%;
+  border-radius: 100%;
+}
+
+.box {
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.boxav1 {
+  display: flex;
+  align-items: center;
+}
+
+.boxav1 p {
+  margin: 0 5px;
+}
+
+.fa.fa-comment {
+  color: rgb(159, 41, 147);
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(165, 39, 165);
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 2vw;
+  font-size: 16px;
+
+}
+
+
+.button {
+  text-align: center;
+  padding: 11px 32px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: cyan;
+  border: none;
+}
+
+.button:hover {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgb(165, 39, 165);
+}
+
+button.text {
+  text-align: center;
+  padding: 11px 32px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  background-color: cyan;
+  border: none;
+}
+
+
+button.text:hover {
+  color: blueviolet;
+  filter: blur(1px);
+  text-shadow: 0px 7px 3px #76cdd7;
+}
+
+div.contact {
+  padding-right: 8vw;
+}
