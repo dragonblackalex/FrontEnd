@@ -1,0 +1,416 @@
+
+@media (max-width: 480px) {
+  body>.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: baseline;
+  }
+
+  .post {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .post_one {
+    background: #F3D250;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post>.post_two {
+    background: #8D8741;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post_three {
+    background: #659DBD;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post>.post_four {
+    background: #DAAD86;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post_two>.post_right {
+    text-align: center;
+  }
+
+  .post_four>.post_right {
+    text-align: center;
+  }
+
+  .news>.news_one,
+  .news>.news_two {
+    margin: 1%;
+    max-width: 100%;
+    background-color: aliceblue;
+    max-width: 100%;
+  }
+
+  .footer {
+
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .header_burger::before,
+  .header_burger::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  .header_burger::before {
+    top: 0;
+  }
+
+  .header_burger::after {
+    bottom: 0;
+  }
+
+  .header_burger span {
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    top: 9px;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-around;
+    background-color: #162b4d;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .header_burger::before,
+  .header_burger::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  .header_burger::before {
+    top: 0;
+  }
+
+  .header_burger::after {
+    bottom: 0;
+  }
+
+  .header_burger span {
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    top: 9px;
+  }
+
+  .menu {
+    visibility: hidden
+  }
+  
+  .post {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .post_one {
+    background: #F3D250;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post>.post_two {
+    background: #8D8741;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post_three {
+    background: #659DBD;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post>.post_four {
+    background: #DAAD86;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post_two>.post_right {
+    text-align: center;
+  }
+
+  .post_four>.post_right {
+    text-align: center;
+  }
+  
+  .footer {
+
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    text-align: center;
+
+  }
+  .logo {
+    display: flex;
+    justify-content: space-around;
+    background-color: #162b4d;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+
+
+
+.post_five {
+  background: url(https://media.wired.com/photos/60c25ed…/2:1/w_2400,h_1200,c_limit/Games-Road-Trip-Road96-1.jpg) center / cover;
+  min-height: calc(50vh - 100px);
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 3%;
+  font-weight: 700;
+  justify-content: center;
+}
+
+body {
+  font-family: roboto;
+  max-width: auto;
+  background-color: #0b192f;
+  color: #484848;
+  font-weight: 100;
+}
+
+.post_one {
+  background: #F3D250;
+  display: flex;
+}
+
+.post_two {
+  background: #8D8741;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.post_three {
+  background: #659DBD;
+  display: flex;
+}
+
+.post_four {
+  background: #DAAD86;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  background-color: #162b4d;
+}
+
+.logo span {
+  color: rgb(97, 20, 20);
+}
+
+footer {
+  background-color: #162b4d;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu_link:hover {
+  background-color: rgba(184, 184, 184, 0.5);
+    color: white;
+  
+}
+.menu_link {height: 100%;
+  width: 100%; padding-top: 10%;}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post_img {
+  min-width: 50%;
+}
+
+.post_img:hover {
+  opacity: 0.3;
+}
+
+.post_five {
+  background: url(https://media.wired.com/photos/60c25edfc99dc8c320fb6cf5/2:1/w_2400,h_1200,c_limit/Games-Road-Trip-Road96-1.jpg) center / cover;
+  min-height: calc(50vh - 100px);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 3%;
+  font-weight: 700;
+}
+
+.post_five h3 {
+  font-weight: 700;
+}
+
+.post_title {
+  padding: 1%;
+}
+
+.post_right {
+  padding: 1%;
+}
+
+aside {
+  display: flex;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.post_title:hover {
+  opacity: 0.5;
+}
+
+.post_right:hover {
+  opacity: 0.5;
+}
+
+.post_right {
+  text-align: right;
+}
+
+.date h1 {
+  margin: 1px;
+}
+
+.date p {
+  margin: 1px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news_one,
+.news_two {
+  margin: 1%;
+  max-width: 63%;
+  background-color: aliceblue;
+}
+
+.news_text {
+  margin: 5%;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+button:hover {
+  border: none;
+  text-decoration: underline
+}

@@ -1,5 +1,5 @@
-@import '_variables1.scss';
 
+//*Міксиеи з маленької букви,Всі кольори в змінні,*//
 @mixin ButtonSize {
     border: 1px;
     padding: 10px 32px;
@@ -10,81 +10,80 @@
 
 @mixin BorderRadius {
     border-radius: 5px;
-
 }
-
-.header_button {
-    @include ButtonSize;
-
+body {
+    margin: 0px;
+    background-color: $BodyBackground;
 }
-
 .section_banner_button {
     @include ButtonSize;
 }
 
-//simple map//
-$colors: (black: #000,
-    white: white);
-
-.header-wrap,
 .section_text,
 .section_banner_heading {
-    color: $TextColor
+    color: white;
 }
 
-;
-
-a {
-    color: map-get($colors, white);
-}
-
-
-header {
+.header {
     background-image: $HeaderImage;
     background-size: cover;
     padding-bottom: 200px;
     border-bottom-right-radius: 500px;
 
-
+    &-wrap { 
+        color: white;
+        margin-left: 100px;
+    }
+    &_heading { 
+        max-width: 600px;
+        font-size: 70px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 850;
+    
+        span {
+            background-color: $MarkColor;
+        }    
+    }
+    &_text {
+        margin-right: 700px;
+        text-align: start;
+        line-height: 1.5;
+        font-family: $FontType;
+    }
+    &_button {
+        @include ButtonSize;
+    }
 }
 
 .section {
     text-align: center;
-
-}
-
-.section_card {
-    display: flex;
-    max-width: 800px;
-    margin: 15px 400px 0px 400px;
-}
-
-body {
-    margin: 0px;
-    background-color: $BodyBackground;
-}
-
-.section_card {
-    padding: 10px;
-    background-color: $PlateBackground;
-
-    & {
+    
+    &_card { 
+        display: flex;
+        max-width: 800px;
+        margin: 15px 400px 0px 400px;
+        padding: 10px;
+        background-color: $PlateBackground;
         @include BorderRadius;
-    }
-
+        
+        &_right_container {
+            @extend .section_link;
+            padding: 0px 30px 0px 30px;
+            word-spacing: 10px;
+        }
+   }
+     
+      
 }
-
+   
 .section_card_right_container {
     @extend .section_link;
     padding: 0px 30px 0px 30px;
     word-spacing: 10px;
-
-
 }
 
 .section_link {
     color: #bcd5cf;
-
 }
 
 
@@ -93,7 +92,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Source Sans Pro', sans-serif;
-    color:  map-get($colors, white);
+    color:  white;
 }
 
 .section_card_text {
@@ -136,21 +135,6 @@ body {
     }
 }
 
-.header_heading {
-    max-width: 600px;
-    font-size: 70px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 850;
-
-    span {
-        background-color: $MarkColor;
-    }
-}
-
-.header-wrap {
-    margin-left: 100px;
-}
-
 .header_text {
 
     margin-right: 700px;
@@ -159,11 +143,11 @@ body {
     font-family: $FontType;
 }
 
-.section_banner {
+/* .section_banner {
     background: $Gradient;
     @include BorderRadius;
 
-}
+} */
 
 .section_banner {
     position: relative;
@@ -185,8 +169,7 @@ body {
     .section_banner_text {
         text-align: left;
         font-family: $FontType;
-        color: map-get($colors, white);
-
+        color: white
     }
 
     .section_banner_text_wrap::before {
@@ -197,7 +180,6 @@ body {
         content: '';
         left: 352px;
         top: 30px;
-
     }
 
 }
@@ -216,7 +198,6 @@ body {
         display: inline-flex;
         align-items: center;
         text-align: left;
-
         max-width: 300px;
     }
 
@@ -238,4 +219,6 @@ body {
     font-family: $FontType;
 }
 
- a.login {margin-left: 150px;}
+ .login {
+     margin-left: 150px;
+ }
